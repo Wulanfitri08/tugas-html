@@ -1,58 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>File HTML index</title>
-</head>
-<body>
-  
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buat Account Baru</title>
+    <title>Media Online</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header section */
+        header {
+            background-color: #4c91af;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        /* Main content */
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        main h3 {
+            color: #4c91af;
+        }
+
+        main ul, main ol {
+            margin-left: 20px;
+        }
+
+        main a {
+            color: #4c9eaf;
+            text-decoration: none;
+        }
+
+        main a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button style */
+        .button {
+            display: inline-block;
+            background-color: #4c90af;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #458fa0;
+        }
+
+        /* Section style */
+        section {
+            margin-top: 30px;
+        }
+
+        section ul {
+            list-style-type: square;
+        }
+
+        section ol {
+            list-style-type: decimal;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Buat Account Baru</h1>
-    <h2>Sign Up Form</h2>
+
+<header>
+    <h1>Media Online</h1>
+    <h2>Sosial Media Developer</h2>
+</header>
+
+<main>
+    <p>Belajar dan berbagi agar hidup menjadi lebih baik</p>
+
+    <section>
+        <h3>Benefit Join di Media Online</h3>
+        <ul>
+            <li>Mendapatkan motivasi dari sesama para Developer</li>
+            <li>Sharing knowledge</li>
+            <li>Dibuat oleh calon web developer terbaik</li>
+        </ul>
+    </section>
     
-    <form action="welcome.html" method="get">
-        <label for="first-name">First name:</label><br>
-        <input type="text" id="first-name" name="first-name"><br><br>
+    <section>
+        <h3>Cara Bergabung ke Media Online</h3>
+        <ol>
+            <li>Mengunjungi Website ini</li>
+            <li>Mendaftarkan di <a href="form.html" class="button">Form Sign Up</a></li>
+            <li>Selesai</li>
+        </ol>
+    </section>
+</main>
 
-        <label for="last-name">Last name:</label><br>
-        <input type="text" id="last-name" name="last-name"><br><br>
+<footer>
+    <p></p>
+</footer>
 
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label><br><br>
-
-        <label for="nationality">Nationality:</label><br>
-        <select id="nationality" name="nationality">
-            <option value="Indonesian">Indonesian</option>
-            <option value="Singaporean">Singaporean</option>
-            <option value="Malaysian">Malaysian</option>
-            <option value="Other">Other</option>
-        </select><br><br>
-
-        <label>Language Spoken:</label><br>
-        <input type="checkbox" id="bahasa" name="language" value="Bahasa Indonesia">
-        <label for="bahasa">Bahasa Indonesia</label><br>
-        <input type="checkbox" id="english" name="language" value="English">
-        <label for="english">English</label><br>
-        <input type="checkbox" id="other-language" name="language" value="Other">
-        <label for="other-language">Other</label><br><br>
-
-        <label for="bio">Bio:</label><br>
-        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
-
-        <input type="submit" value="Sign Up">
-    </form>
 </body>
 </html>

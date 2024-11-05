@@ -1,36 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form HTML</title>
-</head>
-<body>
-  
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Online</title>
+    <title>Buat Account Baru</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Media Online</h1>
-    <h2>Sosial Media Developer</h2>
-    <p>Belajar dan berbagi agar hidup menjadi lebih baik</p>
 
-    <h3>Benefit Join di Media Online</h3>
-    <ul>
-        <li>Sharing knowledge</li>
-        <li>Networking</li>
-        <li>Dapatkan informasi terbaru seputar dunia Developer</li>
-        <li>Bergabung bersama komunitas Developer</li>
-    </ul>
+<header>
+    <h1>Buat Account Baru</h1>
+    <p>Isi formulir di bawah untuk membuat akun baru</p>
+</header>
 
-    <h3>Cara Bergabung di Media Online</h3>
-    <p>Jika tertarik, silakan isi form pendaftaran pada link berikut:</p>
-    <a href="index.html">Form Sign Up</a>
+<div class="form-container">
+    <h2>Formulir Pendaftaran</h2>
+
+    <form action="welcome.html" method="get">
+        <div class="form-group">
+            <label for="first-name">Nama Depan:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Masukkan nama depan Anda">
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">Nama Belakang:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Masukkan nama belakang Anda">
+        </div>
+
+        <div class="form-group">
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Laki-laki</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Perempuan</label>
+        </div>
+
+        <div class="form-group">
+            <label for="nationality">Kewarganegaraan:</label>
+            <select id="nationality" name="nationality">
+                <option value="Indonesian">Indonesia</option>
+                <option value="Singaporean">Singapura</option>
+                <option value="Malaysian">Malaysia</option>
+                <option value="Other">Lainnya</option>
+            </select>
+        </div>
+
+        <div class="form-group language-options">
+            <label>Bahasa yang Dikuasai:</label>
+            <input type="checkbox" id="bahasa" name="language" value="Bahasa Indonesia">
+            <label for="bahasa">Bahasa Indonesia</label>
+            <input type="checkbox" id="english" name="language" value="English">
+            <label for="english">Inggris</label>
+            <input type="checkbox" id="other-language" name="language" value="Other">
+            <label for="other-language">Lainnya</label>
+        </div>
+
+        <div class="form-group">
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tulis sedikit tentang diri Anda..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Daftar Sekarang">
+        </div>
+    </form>
+</div>
+
+<div class="footer">
+    <p>Sudah punya akun? <a href="login.html">Masuk di sini</a>.</p>
+</div>
+
 </body>
 </html>

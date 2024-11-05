@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4c91af;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.form-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #4c7daf;
+}
+
+input[type="text"], input[type="radio"], input[type="checkbox"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+}
+
+input[type="submit"] {
+    background-color: #4c95af;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #457da0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.language-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-options label {
+    margin-left: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.footer a {
+    color: #4c95af;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
