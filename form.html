@@ -10,23 +10,24 @@
 
 <div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh;">
     <header class="text-center mb-4">
-        <button class="btn btn-danger">
-        <h1 class="text-light">Buat Account Baru</h1>
-        <p>Isi formulir di bawah untuk membuat akun baru</p>
-    
-    
+        <div class="bg-primary text-white p-3 rounded">
+            <h1>Buat Account Baru</h1>
+            <p>Isi formulir di bawah untuk membuat akun baru</p>
+        </div>
+    </header>
+
     <div class="card p-4 shadow-sm" style="width: 100%; max-width: 500px;">
-        <h2 class="text-center">Formulir Pendaftaran</h2>
+        <h2 class="text-center mb-4">Formulir Pendaftaran</h2>
         <form action="welcome.html" method="get">
             <div class="mb-3">
                 <label for="first-name" class="form-label">Nama Depan:</label>
-                <div class="alert alert-danger" role="alert">
+                <div class="alert alert-primary" role="alert">
                 <input type="text" id="first-name" name="first-name" class="form-control" placeholder="Masukkan nama depan Anda"></div>
             </div>
 
             <div class="mb-3">
                 <label for="last-name" class="form-label">Nama Belakang:</label>
-                <div class="alert alert-danger" role="alert">
+                <div class="alert alert-primary" role="alert">
                 <input type="text" id="last-name" name="last-name" class="form-control" placeholder="Masukkan nama belakang Anda"></div>
             </div>
 
@@ -41,41 +42,43 @@
             </div>
 
             <div class="mb-3">
+                <div class="alert alert-primary" role="alert">
                 <label for="nationality" class="form-label">Kewarganegaraan:</label>
                 <select id="nationality" name="nationality" class="form-select">
                     <option value="Indonesian">Indonesia</option>
                     <option value="Singaporean">Singapura</option>
                     <option value="Malaysian">Malaysia</option>
-                    <option value="Other">Lainnya</option>
+                    <option value="Other">Lainnya</option></div>
                 </select>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Bahasa yang Dikuasai:</label>
                 <div>
+                    <div class="alert alert-primary" role="alert">
                     <input type="checkbox" id="bahasa" name="language" value="Bahasa Indonesia">
                     <label for="bahasa">Bahasa Indonesia</label>
                     <input type="checkbox" id="english" name="language" value="English">
                     <label for="english">Inggris</label>
                     <input type="checkbox" id="other-language" name="language" value="Other">
-                    <label for="other-language">Lainnya</label>
+                    <label for="other-language">Lainnya</label></div>
                 </div>
             </div>
 
             <div class="mb-3">
                 <label for="bio" class="form-label">Bio:</label>
-                <div class="alert alert-danger" role="alert">
+                <div class="alert alert-primary" role="alert">
                 <textarea id="bio" name="bio" rows="4" class="form-control" placeholder="Tulis sedikit tentang diri Anda..."></textarea></div>
             </div>
 
             <div class="text-center">
-                <button type="submit" class="btn btn-danger w-100">Daftar Sekarang</button>
-            </div></button>
+                <button type="submit" class="btn btn-primary w-100">Daftar Sekarang</button>
+            </div>
         </form>
     </div>
 
     <footer class="text-center mt-4">
-        <p>Sudah punya akun? <a href="login.html">Masuk di sini</a>.</p>
+        <p>Sudah punya akun? <a href="index.html">Masuk di sini</a>.</p>
     </footer>
 </div>
 
